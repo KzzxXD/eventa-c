@@ -1,0 +1,170 @@
+@font-face{
+	font-family: "Roboto";
+	src:url("../fonts/Roboto-Bold.ttf");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+header{
+	background-image: url("../image/1.jpg");
+	background-size: cover;
+	height: 120vh;
+	background-attachment: fixed;
+}
+
+.navbar-ul{
+	list-style-type: none;
+	font-family: sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+}
+.navbar-ul li{
+	    margin-right: 10px;
+    margin-left: 10px;
+}
+.navbar-ul a {
+	    padding: 25px 5px;
+	    font-weight: 700;
+	    font-family: Roboto;
+}
+a{
+		color: #fefefe;
+		text-decoration: none;
+}
+.navbar-nav{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	padding-top: 25px;
+	align-items: center;
+	transition: all .5s;
+   /*background: #1e1f36;*/
+}
+.logo{
+	background-image: url("../image/logo.png");
+	background-size: cover;
+	max-width: 100%;
+	width: 90px;
+	height: 50px;
+}
+#button-get-tikets{
+	background: #e1137b;
+	padding: 15px 30px;
+	position: relative;
+
+}
+a:hover{
+	color: #e1137b;
+}
+#button-get-tikets::before
+{
+	content: '';
+	top: 0;
+width: 100%;
+    left: -45%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.12;
+	position: absolute;
+	transform: skew(15deg);
+		    transition: all 200ms linear;
+
+}
+#button-get-tikets:hover:before{
+	left: 0;
+	opacity: 1;
+	transform: skew(0);
+}
+.style-tikets-btn:hover{
+	color: #e1137b;
+}
+
+.text-btn-tikets{
+	position: relative;
+}
+.get-tikets{
+	padding: 25px 1px;
+    overflow: hidden;
+}
+#another-section{
+	height: 100vh;
+}
+
+.nav-fixed{
+	position: fixed;
+	transition: all .5s;
+	background: #1e1f36;
+	width: 100%;
+	padding: 5px;
+	    z-index: 555;
+}
+
+.text-header{
+	color: #fff;
+	    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 35vh;
+    font-family: Roboto;
+}
+.text-header h3{
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.text-header h1{
+	font-size: 70px;
+	margin-bottom: 10px;
+}
+.fa-clock, .fa-map-marker-alt{
+	color: orange;
+	margin-right: 5px;
+}
+.span-text-header{
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: Roboto;
+	margin-bottom: 50px;
+}
+.spec-char-header{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.reg-now-btn{
+	background: #ff8a01;
+	width: 135px;
+	padding: 20px 5px;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.reg-now-btn::before{
+	content: '';
+	top: 0;
+	background: #fff;
+	width: 100%;
+		opacity: 0.12;
+	position: absolute;
+	transform: skew(15deg);
+	height: 100%;
+	left: -45%;
+	transition: all 200ms linear;
+}
+.reg-now-btn:hover:before{
+	left: 0;
+	opacity: 1;
+	transform: skew(0);
+}
+.style-orange:hover{
+	color: #ff8a01;
+}
